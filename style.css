@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap');
+
+/* GENERAL */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
+
+h1 {
+  font-family: 'Crete Round', serif;
+  font-size: 3em; /* POLICE 45 PIXELS EN RELATIF */
+  color: #444;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #444;
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.orange {
+  color: #ff7a00;
+}
+
+/* HEADER */
+header {
+  background-color: antiquewhite;
+  height: 100px;
+}
+
+header h1 {
+  float: left;
+  margin-top: 32px;
+}
+
+header nav {
+  float: right;
+  margin: 50px;
+}
+
+header nav ul li {
+  float: left;
+  /* display: inline-block; */
+}
+
+header nav ul li a {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+/* MEDIA */
+@media screen and (max-width: 788px) {
+  header {
+    height: 180px;
+  }
+  header .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+    
