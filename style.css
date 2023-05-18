@@ -39,6 +39,10 @@ p {
   color: #777;
 }
 
+small {
+  font-size: 0.8rem;
+}
+
 .wrapper {
   width: 100%;
   margin: 0 auto;
@@ -179,11 +183,77 @@ Le prof a créé des IDs pour les logos de chaque étape
   background: url('images/steps-icon-3.png') no-repeat top center;
 } */
 
+/* MAIN POSIBILITIES */
+#posibilities {
+  margin: 30px;
+  background-color: #efefef;
+  padding: 60px 0;
 
+}
 
+#posibilities .wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+#posibilities article {
+  width: 460px;
+  height: 270px;
+  border-radius: 20px;
+}
+
+#posibilities p {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.first-article {
+  background: url(images/article-image-1.jpg);
+  margin-right: 20px;
+}
+
+.second-article {
+  background-image: url(images/article-image-2.jpg);  
+}
+
+.overlay {
+  background-color: rgba(255,255,255,0.95);
+  width: 50%;
+  height: 230px;
+  padding: 20px;
+  border-radius: 10px 0 0 10px;
+  text-align: center; /* proposition du prof MIEUX adaptée que ma solution */
+}
+
+.overlay h3 {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.info-button {
+  background-color: #ff7a00;
+  color: #fff;
+  padding: 6px 20px;
+  border-radius: 3px;
+  /* margin-left: 9px; */
+}
+
+.info-button:hover {
+  background-color: #02b8dd;
+}
+
+/* #posibilities .wrapper:first-child {
+  background-image: url(images/article-image-1.jpg) no-repeat;
+} */
+
+/* #posibilities .wrapper:last-child {
+  background-image: url(images/article-image-2.jpg);
+} */
 
 /* MEDIA */
-@media screen and (max-width: 788px) {
+@media screen and (max-width: 885px) {
   p {
     font-size: 1.2rem;
   }
@@ -196,7 +266,24 @@ Le prof a créé des IDs pour les logos de chaque étape
     flex-direction: column;
     align-items: center;
   }
+  #posibilities {
+    background-color: inherit;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+  }
+  #posibilities .wrapper {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+  }
+  #posibilities article {
+    margin: 10px auto;
+  }
   @media screen and (max-width: 490px) {
+    * {
+      margin: 0;
+    }
     #main-image h2 {
       font-size: 2rem;
     }
@@ -209,6 +296,10 @@ Le prof a créé des IDs pour les logos de chaque étape
     }
     .card {
       width: 80%;
+    }
+    #posibilities article {
+      width: 100vw;
+      margin-top: 10px;
     }
   }
 }
